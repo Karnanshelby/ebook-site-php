@@ -1,0 +1,27 @@
+CREATE DATABASE `e_lms`;
+
+CREATE TABLE `admin`( `aid` int(11) NOT NULL AUTO_INCREMENT,`aname` VARCHAR(150) NOT NULL,
+                     `apass` VARCHAR(150) NOT NULL,PRIMARY KEY(`aid`));
+
+CREATE TABLE `student`(`sid` int(11) NOT NULL AUTO_INCREMENT,`name` VARCHAR(100) NOT NULL,
+                       `pass` VARCHAR(100) NOT NULL,`dno` VARCHAR(100) NOT NULL,
+                       `email` VARCHAR(100) NOT NULL,`phone` int(10) NOT NULL,PRIMARY KEY(`sid`))
+
+CREATE TABLE `book` (`bid` int(11) NOT NULL AUTO_INCREMENT,`btitle` VARCHAR(100) NOT NULL,`author` VARCHAR(100) NOT NULL,`genre` VARCHAR(100) NOT NULL, `keywords` VARCHAR(100) NOT NULL,`file` VARCHAR(100) NOT NULL,PRIMARY KEY(`bid`));
+ALTER TABLE `book` ADD `img` VARCHAR(100) NOT NULL AFTER `file`;
+                    
+CREATE TABLE `comment`(`cid` INT(11) NOT NULL AUTO_INCREMENT,`bid` INT(11) NOT NULL, `sid` INT(11) NOT NULL,`comm` VARCHAR(100) NOT NULL,`logs` DATE NOT NULL, PRIMARY KEY (`cid`));
+
+CREATE TABLE `request`(`rid` INT(11) NOT NULL AUTO_INCREMENT, `sid` INT(11) NOT NULL,`mes` VARCHAR(100) NOT NULL,`logs` DATE NOT NULL, PRIMARY KEY (`rid`));
+
+
+action&adventure
+horror
+romance
+novel
+short story
+children
+biography
+history
+humor
+science & technology

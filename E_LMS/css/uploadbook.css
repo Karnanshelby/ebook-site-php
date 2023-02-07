@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color:  #e7f2f8;
+
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+}
+label.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-left: 100px;
+    line-height: 60px;
+}
+.contant{
+    display: flex;
+}
+
+aside{
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #274472;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #042331;
+}
+aside ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 18px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #e1e1e11a;
+    transition: .5s;
+}
+a:hover{
+    padding-left: 50px;
+}
+aside ul a i{
+    margin-right: 10px;
+} 
+
+.wrapper{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper h1{
+
+    line-height: 170px; 
+    font-size: 40px;
+    color: #274472;
+} 
+.container{
+    width: 400px;
+    height: 350px;
+    margin:  auto;
+    font-size: 22px;
+    line-height: 40px;
+    background: transparent;
+}
+label{
+    font-weight: bold;
+}
+input{
+    width:80% ;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid black;
+
+}
+textarea{
+    width:80% ;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid black;
+}
+#inputfile{
+    font-size: 14px;
+}
+
+input[type="file"]::file-selector-button {
+    font-size:16px;
+    padding: 7px 7px;
+    font-weight: 500;
+    border: 1px solid black;
+    background-color:  #274472;
+    color: white;
+    border-radius: 5px;
+  }
+button{
+    width: 40%;
+    padding: 10px 10px;
+    margin: 40px 75px;
+    font-size: medium;
+    font-weight: 500;
+    border: 1px solid black;
+    background-color:  #274472;
+    color: white;
+    border-radius: 10px;
+}
+select{
+    background: transparent;
+    width:85% ;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+}
